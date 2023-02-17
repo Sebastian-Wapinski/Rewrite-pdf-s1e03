@@ -1,16 +1,13 @@
 .parent {
-    height: 200px;
-    width: 400px;
-    padding-bottom: 20px;
     font-size: 20px;
+    height: 10em;
 
     background-color: red;
 }
 
 .child {
-    padding-bottom: 50%;
-    margin-right: 50%;
-    font-size: 50%;
-    
+    font-size: 25px;
+    height: 4em;
+
     background-color: blue;
 }
