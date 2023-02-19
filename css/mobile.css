@@ -7,3 +7,13 @@ main {
     background-color: #ffdfba;
     min-height: calc(100vh - 80px);
 }
+
+section {
+    border: none;
+}
+
+section > article {
+    margin: 20px;
+    min-height: calc(50vh - 30px);
+    background-color: #baffc9;
+}
