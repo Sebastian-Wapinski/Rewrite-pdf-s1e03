@@ -1,0 +1,9 @@
+header {
+    background-color: #ffffba;
+    height: 80px;
+}
+
+main {
+    background-color: #ffdfba;
+    min-height: calc(100vh - 80px);
+}
