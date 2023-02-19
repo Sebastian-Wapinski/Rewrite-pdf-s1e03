@@ -1,6 +1,8 @@
 p {
-    column-count: 3;
-    column-gap: 40px;
-    column-rule: 1px solid #baffc9;
-    text-align: justify;
+    width: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    resize: horizontal;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .3);
 }
