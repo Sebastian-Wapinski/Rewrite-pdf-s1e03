@@ -1,8 +1,16 @@
 p {
-    width: 50px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    resize: horizontal;
-    box-shadow: 0 0 4px 4px rgba(0, 0, 0, .3);
+width: 300px;
+}
+
+p::before {
+    background-color: #ffffba;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 100px;
+    float: left;
+    width: 100px;
+
+    shape-outside: circle();
+    margin-right: 20px;
 }
