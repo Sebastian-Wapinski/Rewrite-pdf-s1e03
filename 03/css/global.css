@@ -1,0 +1,17 @@
+.container {
+    margin: 5px;
+    outline: 1px solid black;
+    /* height: 300px; */
+
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr [start]) [middle] 2fr [end]; */
+    grid-template-columns: [start] 1fr [middle-start] 1fr [middle-end] 2fr [end];
+    grid-template-rows: [row-start] 10vh 1fr [row-end];
+}
+
+.item {
+    margin: 5px;
+    outline: 1px solid black;
+
+    /* grid-column-start: start 2; */
+}
