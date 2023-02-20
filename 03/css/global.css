@@ -1,17 +1,120 @@
 .container {
     margin: 5px;
+    /* padding: 10px; */
     outline: 1px solid black;
-    /* height: 300px; */
+    height: 800px;
 
     display: grid;
     /* grid-template-columns: repeat(2, 1fr [start]) [middle] 2fr [end]; */
-    grid-template-columns: [start] 1fr [middle-start] 1fr [middle-end] 2fr [end];
-    grid-template-rows: [row-start] 10vh 1fr [row-end];
+    grid-template-columns: [start] 1fr [middle-start] 1fr [middle-end] 1fr 1fr [end];
+    grid-template-rows: [row-start] 10vh 10vh 10vh 10vh [row-end];
+
+    grid-template-areas:
+        "header header nav nav"
+        "content content content content"
+        "popular-content popular-content none aside"
+        ". footer footer .";
+
+    column-gap: 20px;
+    row-gap: 20px;
+
+    justify-items: stretch;
+    align-items: stretch;
+
+    /* place-items: center; */
+    /* place-items: start / center; */
+
+    justify-content: center;
+    align-content: space-evenly;
+
+    /* place-content: center; align/justify */
+
+
 }
 
 .item {
-    margin: 5px;
     outline: 1px solid black;
 
     /* grid-column-start: start 2; */
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.popular-content {
+    grid-area: popular-content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container2 {
+    margin: 5px;
+    /* padding: 10px; */
+    outline: 1px solid black;
+    height: 800px;
+
+    display: grid;
+
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 90px 90px;
+
+    grid-auto-columns: 60px;
+    grid-auto-rows: 90px;
+}
+
+.item2 {
+    outline: 1px solid black;
+
+    /* grid-column-start: start 2; */
+}
+
+.item-a {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.item-b {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.container3 {
+    margin: 5px;
+    /* padding: 10px; */
+    outline: 1px solid black;
+    height: 800px;
+
+    display: grid;
+
+    grid-auto-flow: column;
+     /* lub jako row */
+}
+
+.item3 {
+    outline: 1px solid black;
+}
+
+.item-aa {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.item-f {
+    grid-column: 6;
+    grid-row: 1/3;
 }
